@@ -14,7 +14,6 @@ h1{
 .galeria{
     width: 90%;
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
     align-items: center;
@@ -43,6 +42,11 @@ button{
 
 #contenedorPrincipal{
     width: 100%;
+    
+}
+
+#lightBox{
+    width: 50%;
     position: relative;
 }
 
@@ -62,4 +66,13 @@ button{
     position: absolute;
     top: 50%;
     left: 0;
+}
+
+/* Responsive */
+/* revisar el diseño para celulares */
+
+@media(max-width:420px){
+    body{
+        margin:0 auto;
+    }
 }
