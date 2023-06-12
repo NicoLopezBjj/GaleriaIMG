@@ -33,21 +33,35 @@ h1{
 }
 
 button{
-    background-color: #f3f3f3;
+    background-color: transparent;
     border:none;
     border-radius: 1%;
     cursor: pointer;
     padding: 0.5rem 0.5rem; 
+    font-size: 1rem;
 }
 
+.grande{
+    font-size: 3rem;
+}
+
+
+/* cambie el position del lightbox, le puse relative a lightbox y se lo saque a contenedor principal, tengo que ver como queda esa pantalla cuando aplique js y se agrande la imagen. */
 #contenedorPrincipal{
     width: 100%;
-    
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #lightBox{
     width: 50%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #btnCierra{
