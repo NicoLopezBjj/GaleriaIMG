@@ -6,7 +6,7 @@ const btnAdelanta = document.getElementById("btnAdelanta")
 
 const btnRetrocede = document.getElementById("btnRetrocede")
 
-const imagenes = document.querySelectorAll("#galeriaImg")
+const imagenes = document.getElementById("imagenes")
 
 const lightBox = document.getElementById("contenedorPrincipal")
 
@@ -15,4 +15,11 @@ const imgActiva = document.getElementById("imagenActiva")
 let imagenIndice = 0
 
 // Abrir el lightbox
+
+const abrir = (event) => {
+    lightBox.style.display = "flex"
+}
+
+imagenes.addEventListener("click", abrir)
+
 

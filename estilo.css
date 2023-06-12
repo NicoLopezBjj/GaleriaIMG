@@ -24,12 +24,12 @@ h1{
 .galeria img{
     width: 100%;
     height: 90%;
+    cursor: pointer;
 }
 
 .galeria img:hover{
     transform: scale(1.1);
     transition: 0.5s;
-    cursor: pointer;
 }
 
 button{
@@ -48,7 +48,11 @@ button{
 
 /* cambie el position del lightbox, le puse relative a lightbox y se lo saque a contenedor principal, tengo que ver como queda esa pantalla cuando aplique js y se agrande la imagen. */
 #contenedorPrincipal{
+    position: fixed;
+    top:0;
+    left:0;
     width: 100%;
+    height: 100%;
     z-index: 10;
     display: none;
     justify-content: center;
@@ -58,10 +62,12 @@ button{
 
 #lightBox{
     width: 50%;
+    height: 50%;
+    border: 0.5rem #f3f3f3 solid;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 0.5rem
 }
 
 #btnCierra{
