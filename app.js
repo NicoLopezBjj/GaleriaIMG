@@ -16,7 +16,7 @@ let imagenIndice = 0
 
 // Abrir el lightbox
 
-const abrir = (event) => {
+const abrir = () => {
    lightBox.style.display = "flex"
 }
 
