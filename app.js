@@ -17,9 +17,16 @@ let imagenIndice = 0
 // Abrir el lightbox
 
 const abrir = (event) => {
-    lightBox.style.display = "flex"
+   lightBox.style.display = "flex"
 }
 
 imagenes.addEventListener("click", abrir)
+
+
+const cerrar = () => {
+    lightBox.style.display = "none"
+}
+
+btnCierra.addEventListener("click", cerrar)
 
 
