@@ -19,8 +19,6 @@ let imagenIndice = 0
 const abrir = (event) => {
    lightBox.style.display = "flex"
    imgActiva.src = event.target.src
-   console.log(event)
-   console.log(event.target.src)
 }
 
 for(let imagen of imagenes){
@@ -31,7 +29,6 @@ for(let imagen of imagenes){
 
 const cerrar = () => {
     lightBox.style.display = "none"
-
 }
 
 btnCierra.addEventListener("click", cerrar)
@@ -59,8 +56,4 @@ const retroceder = () =>{
 
 btnRetrocede.addEventListener("click",retroceder)
 
-/* arrary de imagenes
-indices de de 0 a 9,
-variable con index de imgactiva
-array[index]
-*/
+
