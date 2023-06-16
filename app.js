@@ -49,6 +49,16 @@ const adelantar = () => {
 btnAdelanta.addEventListener("click",adelantar)
 
 
+const retroceder = () =>{
+    if(imagenIndice===0){
+        imagenIndice = imagenes.length
+    }
+    imgActiva.src = imagenes[imagenIndice - 1].src
+    imagenIndice--
+}
+
+btnRetrocede.addEventListener("click",retroceder)
+
 /* arrary de imagenes
 indices de de 0 a 9,
 variable con index de imgactiva
