@@ -38,6 +38,17 @@ btnCierra.addEventListener("click", cerrar)
 
 // Cambiar imagenes
 
+const adelantar = () => {
+    if (imagenIndice === imagenes.length - 1){
+        imagenIndice = -1
+    }
+    imgActiva.src = imagenes[imagenIndice + 1].src
+    imagenIndice++
+}
+
+btnAdelanta.addEventListener("click",adelantar)
+
+
 /* arrary de imagenes
 indices de de 0 a 9,
 variable con index de imgactiva
